@@ -1,0 +1,60 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+.split {
+  height: 100%;
+  width: 15%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 0;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color:#2E3648;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color:#222736;
+  width: 85%;
+}
+
+.sidenavheader{
+  padding-top: 5%;
+  text-align: center;
+  color: #626ED4;
+}
+
+#heads {
+  padding-top: 10%;
+  padding-left: 5%;
+  color: #E9ECEF;
+  font-size: 90%;
+  text-align: left;
+  float: left;
+  width: 15%;
+}
+
+.sidenav h7{
+
+  padding-top: 80%;
+  padding-left: 30%;
+
+  font-size: 80%;
+  color: #E9ECEF;
+}
+
+.sidenav ul li {
+  margin: 4% 0;
+}
+
+.sidenav ul li a{
+  color: #ffffff;
+  padding: 0 30px;
+  font-size: 80%;
+
+}
