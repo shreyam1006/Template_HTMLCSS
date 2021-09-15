@@ -55,7 +55,7 @@ h7{
     padding-top: 30px;
     padding-left: 10px;
     padding-bottom: 10px;
-    font-size: 50%;
+    font-size: 70%;
     color: #adb3b9;
 }
 
@@ -63,7 +63,7 @@ h7{
     padding-top: 20px;
     padding-left: 10px;
     padding-bottom: 10px;
-    font-size: 50%;
+    font-size: 70%;
     color: #adb3b9;
 }
 
@@ -223,6 +223,16 @@ h7{
     max-width: fit-content;
 }
 
+.box h7{
+    position: relative;
+}
+
+.box img{
+    position: absolute;
+    top:45px;
+    left: 108vh;
+}
+
 .container .content .cards .card .card-top .arrow{
     padding-top: 5vh;
     flex-grow: 4;
@@ -231,6 +241,17 @@ h7{
 .container .content .cards .card .card-top .bookmark{
     padding-top: 1vh;
     float: right;
+}
+
+.bookmark{
+    position: relative;
+}
+
+.bookmark p{
+    position: absolute;
+    top:18px;
+    right: 2px;
+    font-size: 70%;
 }
 
 .container .content .cards .card .card-top .bookmark img{
@@ -249,5 +270,27 @@ h7{
     font-weight: lighter;
 }
 
+.container .content .content-2{
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
 
+.container .content .content-2 .transaction{
+    min-height: 59vh;
+    flex: 7;
+    background: #2E3648;
+    margin: 8px 8px 8px 15px;
+    border-radius: 5px;
+}
+
+.container .content .content-2 .chat{
+    min-height: 59vh;
+    flex: 4;
+    background: #2E3648;
+    margin: 8px 15px;
+    border-radius: 5px;
+}
 
