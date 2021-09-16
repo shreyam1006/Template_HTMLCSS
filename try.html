@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="trystyle.css">
     <title>Template</title>
 </head>
@@ -47,19 +48,21 @@
             <div class="nav">
                 <div class="menu">
                     <img src="menu.png" alt="" width="15px" height="15px">&nbsp; &nbsp;
-                    <a href="#" class="btn">Create</a>
-                </div>
-
-                <div class="search">
-                    <input type="text" placeholder="Search...">
-                    <img src="search.png" alt="" width="15px" height="15px">
+                    <a href="#" class="button" style="background-color: #2E3648;">Create</a>
+                    <div class="arr">
+                        <img src="arrow.png" alt="" width="15px" height="15px">&nbsp; &nbsp;
+                    </div>
                 </div>
 
                 <div class="user">
+                    <div class="search">
+                        <input type="text" placeholder="Search...">
+                        <img src="search.png" alt="">
+                    </div>
                     <img src="https://img.icons8.com/color/48/000000/usa.png" alt="" width="15" height="15">
                     <h7>English</h7>
-                    <img src="arrow.png" alt="" width="15" height="15">
-                    <img src="download.png" alt="" width="15" height="15">
+                    <img src="arrow.png" alt="" width="10px" height="10px">
+                    <img src="download.png" alt="" width="10px" height="10px">
                     <img src="bell.png" alt="" width="15" height="15">
                     <img src="https://img.icons8.com/color/48/000000/circled-user-male-skin-type-7--v1.png" alt=""
                         width="15" height="15">
@@ -96,7 +99,9 @@
                         </div>
                     </div>
                     <div class="card-bottom">
-                        <div class="card-month"><h7>Since last month</h7></div>
+                        <div class="card-month">
+                            <h7>Since last month</h7>
+                        </div>
                         <img src="rightarrow.png" alt="" height="20" width="20">
                     </div>
                 </div>
@@ -125,7 +130,9 @@
                         </div>
                     </div>
                     <div class="card-bottom">
-                        <div class="card-month"><h7>Since last month</h7></div>
+                        <div class="card-month">
+                            <h7>Since last month</h7>
+                        </div>
                         <img src="rightarrow.png" alt="" height="20" width="20">
                     </div>
                 </div>
@@ -147,7 +154,7 @@
 
                         </div>
                         <div class="arrow" style="display: inline;">
-                            
+
                         </div>
                         <div class="bookmark">
                             <img src="averagepricebm.png" alt="" height="36" width="33">
@@ -155,7 +162,9 @@
                         </div>
                     </div>
                     <div class="card-bottom">
-                        <div class="card-month"><h7>Since last month</h7></div>
+                        <div class="card-month">
+                            <h7>Since last month</h7>
+                        </div>
                         <img src="rightarrow.png" alt="" height="20" width="20">
                     </div>
                 </div>
@@ -175,7 +184,7 @@
                             <h3>2436</h3>
 
                         </div>
-                        <div class="arrow" >
+                        <div class="arrow">
                             <img src="up.png" alt="" width="20" height="20">
                         </div>
                         <div class="bookmark">
@@ -184,20 +193,155 @@
                         </div>
                     </div>
                     <div class="card-bottom">
-                        <div class="card-month"><h7>Since last month</h7></div>
+                        <div class="card-month">
+                            <h7>Since last month</h7>
+                        </div>
                         <img src="rightarrow.png" alt="" height="20" width="20">
                     </div>
                 </div>
 
                 <!-- Card4 Ends Here -->
-                
+
 
             </div>
             <div class="content-2">
                 <div class="transaction">
-                    
+                    <div class="title">
+                        <h5>Latest Transaction</h5>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>(#) Id</th>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                            <th> </th>
+                        </tr>
+                        <!-- Row 1 Starts Here -->
+                        <tr>
+                            <td>#14256</td>
+                            <td>
+                                <div class="namecol" id="pageelement">
+                                    <img src="https://img.icons8.com/doodle/48/000000/user-female-circle.png" width="28"
+                                        height="28"> &nbsp;
+                                    <div>Philip Smeed</div>
+                                </div>
+                            </td>
+                            <td>15/1/2018</td>
+                            <td>$94</td>
+                            <td><a href="#" class="status" style="background-color: #2AA39A;"> Delivered </a></td>
+                            <td><a href="#" class="button"> Edit </a> </td>
+                        </tr>
+                        <!-- Row 1 Ends Here -->
+                        <!-- Row 2 Starts Here -->
+                        <tr>
+                            <td>#14257</td>
+                            <td>
+                                <div class="namecol" id="pageelement">
+                                    <img src="https://img.icons8.com/doodle/48/000000/user-female-circle.png" width="28"
+                                        height="28"> &nbsp;
+                                    <div>Brent Shipley</div>
+                                </div>
+                            </td>
+                            <td>16/1/2019</td>
+                            <td>$112</td>
+                            <td><a href="#" class="status" style="background-color: #F8B425;"> Pending </a></td>
+                            <td><a href="#" class="button"> Edit </a> </td>
+                        </tr>
+                        <!-- Row 2 Ends Here -->
+
+                        <!-- Row 3 Starts Here -->
+                        <tr>
+                            <td>#14258</td>
+                            <td>
+                                <div class="namecol" id="pageelement">
+                                    <img src="https://img.icons8.com/doodle/48/000000/user-female-circle.png" width="28"
+                                        height="28"> &nbsp;
+                                    <div>Robert Sitton</div>
+                                </div>
+                            </td>
+                            <td>17/1/2019</td>
+                            <td>$116</td>
+                            <td><a href="#" class="status" style="background-color: #2AA39A;"> Delivered </a></td>
+                            <td><a href="#" class="button"> Edit </a> </td>
+                        </tr>
+                        <!-- Row 3 Ends Here -->
+
+                        <!-- Row 4 Starts Here -->
+                        <tr>
+                            <td>#14259</td>
+                            <td>
+                                <div class="namecol" id="pageelement">
+                                    <img src="https://img.icons8.com/doodle/48/000000/user-female-circle.png" width="28"
+                                        height="28"> &nbsp;
+                                    <div>Alberto Jackson</div>
+                                </div>
+                            </td>
+                            <td>18/1/2019</td>
+                            <td>$109</td>
+                            <td><a href="#" class="status" style="background-color: #EC4561;"> Cancel </a></td>
+                            <td><a href="#" class="button"> Edit </a> </td>
+                        </tr>
+                        <!-- Row 4 Ends Here -->
+
+                        <!-- Row 5 Starts Here -->
+                        <tr>
+                            <td>#14260</td>
+                            <td>
+                                <div class="namecol" id="pageelement">
+                                    <img src="https://img.icons8.com/doodle/48/000000/user-female-circle.png" width="28"
+                                        height="28"> &nbsp;
+                                    <div>David Sanchez</div>
+                                </div>
+                            </td>
+                            <td>19/1/2019</td>
+                            <td>$120</td>
+                            <td><a href="#" class="status" style="background-color: #2AA39A;"> Delivered </a></td>
+                            <td><a href="#" class="button"> Edit </a> </td>
+                        </tr>
+                        <!-- Row 5 Ends Here -->
+
+                        <!-- Row 6 Starts Here -->
+                        <tr>
+                            <td>#14261</td>
+                            <td>
+                                <div class="namecol" id="pageelement">
+                                    <img src="https://img.icons8.com/doodle/48/000000/user-female-circle.png" width="28"
+                                        height="28"> &nbsp;
+                                    <div>Philip Smeed</div>
+                                </div>
+                            </td>
+                            <td>15/1/2018</td>
+                            <td>$94</td>
+                            <td><a href="#" class="status" style="background-color: #F8B425;"> Pending </a></td>
+                            <td><a href="#" class="button"> Edit </a> </td>
+                        </tr>
+                        <!-- Row 6 Ends Here -->
+
+
+
+                    </table>
+
                 </div>
                 <div class="chat">
+                    <div class="title">
+                        <h5>Chat</h5>
+                    </div>
+                    <div class="chat-box">
+                        <div class="chat-name"></div>
+                        <div class="chat message">
+
+                        </div>
+
+                    </div>
+                    
+                    <div class="chat-who">
+                        <div class="chat-img"></div>
+                        <div class="chat-time"></div>
+                    </div>
+                    
+                    
 
                 </div>
             </div>
