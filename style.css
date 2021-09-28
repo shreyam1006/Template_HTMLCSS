@@ -28,26 +28,37 @@ h7{
     color: whitesmoke;
 }
 
+.complete{
+    display: flex;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
 
 .side-menu{
-    position: fixed;
-    width: 15%;
+    /* position: fixed; */
+    width: 15%; 
     background-color: #2E3648;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     color: #626ED4;
-    justify-content: space-evenly;
+    /* justify-content: space-around; */
 }
 
 
 
-@media only screen and (max-width: 1026px){
+@media only screen and (max-width: 1026px){ 
 
-    .side-menu{ 
+     .side-menu{  
         display: none;
-    }
-}
+     } 
+
+     .container{
+         width: 100%;
+     }
+ } 
 
 .side-menu .brand-name{
     height: 7vh;
@@ -86,8 +97,8 @@ h7{
 
 
 .side-menu li:hover{
-    background-color: #E9ECEF ;
-    color: #2E3648;
+    background-color: #222736 ;
+    /* color: #2E3648; */
 }
 
 
@@ -99,10 +110,11 @@ h7{
     background: #222736;
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 5;
 }
 
 .container .footer{
-    position: fixed;
+    position: fixed; 
     bottom: 0;
     right: 0;
     width: 85vw;
@@ -249,6 +261,8 @@ h7{
     background: #626ED4;
     margin-left: 6px;
     margin-right: 6px;
+    /* margin-top: 6px; */
+    margin-bottom: 13px;
     display: flex;
     justify-content: flex-start;
     align-items: top;
@@ -261,8 +275,9 @@ h7{
     box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
 
-
-
+.container .content .cards .card:hover{
+    background-color: #4b56b6;
+}
 
 .container .content .cards .card .card-top{
     display: flex;
@@ -337,8 +352,8 @@ h7{
 }
 
 
-.container .content-2{
-    min-height: 60vh;
+.container .content .content-2{
+    height: 60vh;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -348,11 +363,11 @@ h7{
 }
 
 .container .content .content-2 .transaction{
-    min-height: 56vh;
+    /* min-height: 56vh; */
     max-height: 56vh;
     flex: 7;
     background: #2E3648;
-    margin: 8px 8px 8px 15px;
+    margin: 8px 5px 10px 20px;
     border-radius: 5px;
     flex-direction: column;
     display: flex;
@@ -366,11 +381,11 @@ h7{
 .container .content .content-2 .chatcontainer{
     display: flex;
     flex-direction: column;
-    min-height: 56vh; 
+    min-height: 56vh;
     max-height: 56vh;
     flex: 4;
     background:#2E3648;
-    margin: 8px 15px;
+    margin: 8px 20px 10px 15px;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -387,7 +402,12 @@ h7{
 table{
     padding: 1px;
     margin: 0 15px 5px 15px;
+    border-collapse: collapse;
 
+}
+
+table tr{
+    border-bottom: 0.01px solid rgb(114, 109, 109);
 }
 
 th,
@@ -398,7 +418,6 @@ td{
     font-weight: lighter;
     align-items: center;
     color: white;
-    border-bottom: 0.1px solid rgb(114, 109, 109);
     padding-bottom: 7px;
     padding-top: 7px;
     
@@ -421,6 +440,11 @@ td{
     border-radius: 2px;
     text-align: center;
     font-size: 80%;
+}
+
+.button:hover{
+    background-color: #adb3b9;
+    color: #2E3648;
 }
 
 .status{
@@ -456,8 +480,7 @@ td{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 8px;
-    
+    margin-top: 10px;
 }
 
 
@@ -562,7 +585,8 @@ td{
     border-style: solid;
     border-width: 10px 0px 10px 10px;
     border-color: #E2E4F7 transparent  transparent transparent;
-    margin-bottom:23px;
+    margin-top:0;
+    margin-bottom: 23.5px;
 }
 .user2 .triangle{ 
     width: 0;
@@ -570,7 +594,7 @@ td{
     border-style: solid;
     border-width: 0px 10px 10px 10px;
      border-color: transparent transparent  transparent #363E54; 
-     margin-bottom:34px; 
+     margin-bottom:33.5px; 
  } 
 
 .messagepart h6{
